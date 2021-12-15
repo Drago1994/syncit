@@ -9,6 +9,7 @@
 	Sva polja forme moraju biti popunjena kako bi se otkjucalo dugme save.
 	Pritiskom na dugme reset, vraca se stanje sa servera.
 
+
 - backend je laravel api, komanda za pokretanje:
 	
 	php artisan serve --PORT=4000
@@ -21,7 +22,12 @@
 
 	POST /api/save -->  ContactController@save
 
+
 - baza je MySQL server sa semom pod nazivom test. Tabele sam kreirao sa migracijama, a popunio sa DatabaseSeeder-om.
+
+	php artisan migrate:reset
+
+	php artisan migrate:refresh --seed
 
 
 
